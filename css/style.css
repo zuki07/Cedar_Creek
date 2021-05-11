@@ -1,0 +1,670 @@
+
+                    /*HEADER SECTION*/
+
+header{
+ background-image: url(../images/mobile/main_mobile.jpg);
+ grid-area: header;
+ background-repeat: no-repeat;
+ background-position: center;
+ padding-top: 5px;
+ display: grid;
+ grid-template-rows: 35px auto 1fr;
+ grid-template-columns: 1fr 1fr 1fr 1.1fr 1fr;
+ grid-template-areas:
+		"nav1  nav2  nav3  nav4  nav5"
+		"h1     h1    h1    h1    h1"
+		"mt1    h2    h2    h3    mt2";
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+header h1 {
+ font-family: londrina solid;
+ font-size: 30px;
+ grid-area: h1;
+ text-align: center;
+ padding: 100px 5px 0px 5px;
+ color: white;
+ margin: 0px;
+}
+header h2{
+ grid-area: h2;
+ justify-self: right;
+ align-self: center;
+ color: white;
+ font-size: 24px;
+ margin: 10px 0px 50px 0px;
+ padding-right: 8px;
+}
+.link {
+  grid-area: h3;
+  margin-left: 20px;
+  justify-self: left;
+  align-self: center;
+  margin: 10px 10px 50px 0px;
+  padding-left: 8px;
+}
+header a {
+ padding: 5px;
+ font-family: londrina solid;
+ font-size: 12px;
+ color: black;
+ background-color: #e73074;
+ border-radius: 24px;
+ text-decoration: none;
+}
+.logo {
+ background-image: url(../images/mobile/logo_mobile.png);
+ background-repeat: no-repeat;
+ width: 75%;
+ grid-area: h1;
+ margin: 20px 0px 0px 50px;
+ justify-self: left;
+
+}
+
+
+                          /*NAV SECTION*/
+#nav1 {
+  grid-area: nav1;
+}
+#nav2 {
+   grid-area: nav2;
+}
+#nav3 {
+   grid-area: nav3;
+}
+#nav4 {
+   grid-area: nav4;
+}
+#nav5 {
+   grid-area: nav5;
+}
+#nav1, #nav2, #nav3, #nav4, #nav5 {
+ margin: 0px;
+ justify-self: center;
+ margin-top: 5px;
+}
+
+
+
+                  /*ABOUT SECTION*/
+#about {
+ display: grid;
+ grid-area: about;
+ color: white;
+ grid-template-rows: 310px 310px;
+ grid-template-columns: 1fr;
+ grid-template-areas: "top"
+		              "bottom";
+ margin: 0px;
+ justify-items: center;
+}
+#about h3 {
+ margin: 0px;
+ text-align: center;
+ padding-top: 5px;
+ font-size: 22px;
+}
+#about p {
+ font-size: 14px;
+ margin: 0px 5px 10px 5px;
+ padding: 15px;
+}
+#about .left {
+ grid-area: top;
+ background-image: url(../images/mobile/who_we_are_mobile.jpg);
+}
+#about .right {
+ grid-area: bottom;
+ background-image: url(../images/mobile/family_mobile.jpg);
+}
+#about .left, #about .right {
+ background-repeat: no-repeat;
+ background-position: center;
+ border-width: 8px;
+ border-style: solid;
+ margin: 20px;
+ border-color: #a62957;
+ margin: 20px;
+ max-width: 350px;
+ box-shadow: 10px 10px black;
+}
+
+
+                    /*FEATURED BEER SECTION*/
+#featured {
+ grid-area: featured;
+ background-color: #bd45bf;
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ grid-template-rows: 120px 200px 200px 200px;
+ grid-template-areas:
+                "h2        h2"
+                "image1   image2"
+                "image3   image4"
+		        "image5   image6";
+ text-align: center;
+ padding-bottom: 30px;
+ justify-items: center;
+}
+#featured p {
+ font-family: alegreya sans sc;
+ font-size: 18px;
+ margin-top: 10px;
+ color: white;
+ font-weight: bold;
+}
+#featured h2{
+  grid-area: h2;
+  text-shadow: .1em .1em .1em #a62957;
+  letter-spacing: 9px;
+  word-spacing: 13px;
+  margin: 0px 5px 0px 5px;
+  align-self: center;
+}
+.image1, .image2, .image3, .image4, .image5, .image6 {
+  border-radius: 20px;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  margin: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-width: 140px;
+  box-shadow: 10px 10px black;
+}
+.image1{
+  grid-area: image1;
+  background-image: url(../images/mobile/good_intentions_mobile.jpg);
+}
+.image2{
+  grid-area: image2;
+  background-image: url(../images/mobile/oat_n_about_mobile.jpg);
+}
+.image3{
+  grid-area: image3;
+  background-image: url(../images/mobile/wieze_ass_mobile.jpg);
+}
+.image4{
+  grid-area: image4;
+  background-image: url(../images/mobile/darkosaurus_mobile.jpg);
+}
+.image5{
+  grid-area: image5;
+  background-image: url(../images/mobile/livin_easy_mobile.jpg);
+}
+.image6{
+  grid-area: image6;
+  background-image: url(../images/mobile/patio_pounder_mobile.jpg);
+}
+
+                    /*BEER OF THE MONTH SECTION*/
+
+#beerMonth {
+ background-image: url(../images/mobile/monthly_beer_mobile.jpg);
+ background-repeat: no-repeat;
+ background-position: center;
+ min-height: 300px;
+ grid-area: beerMonth;
+ width: 80%;
+ margin: 40px;
+ text-align: center;
+ color: white;
+ display: grid;
+ grid-template-rows: 75px 50p 1fr 1fr;
+ grid-template-areas: "h2"
+		              "h3"
+		              "texttop"
+                      "textbottom";
+ justify-self: center;
+ border-image: url("../images/mobile/main_mobile.jpg");
+ border-image-repeat: stretch;
+ border-image-slice: 15;
+ border-image-width: auto;
+ border-style: solid;
+}
+#beerMonth h2 {
+ grid-area: h2;
+ margin: 20px 0px 0px 0px;
+}
+#beerMonth h3 {
+ grid-area: h3;
+ font-size: 22px;
+ margin: 0px;
+ align-self: center;
+}
+#beerMonth p {
+ grid-area: texttop;
+ text-align: center;
+ font-family: open sans;
+ font-style: italic;
+ font-size: 12px;
+ margin: 30px 20px 0px 20px;
+}
+#beerMonth ul {
+ grid-area: textbottom;
+ margin: 10px 20px 30px;
+ font-family: open sans;
+ font-style: italic;
+ font-size: 12px;
+}
+
+
+                    /*CONTACTS SECTION*/
+
+#contacts {
+ background-image: url(../images/mobile/keg_mobile.jpg);
+ background-repeat: no-repeat;
+ background-position: center;
+ width: 80%;
+ grid-area: contacts;
+ margin: 0px 0px 40px 0px;
+ text-align: center;
+ border-radius: 20px;
+ justify-self: center;
+ }
+#contacts h2 {
+ font-size: 26px;
+ margin: 20px 40px 0px 30px;
+ }
+#contacts ul, #contacts ol {
+ font-family: open sans;
+ font-size: 12px;
+ font-weight: 900;
+ list-style-type: none;
+ list-style-position: outside;
+ padding: 0px;
+ margin: 10px;
+ }
+.address a, .phone a, .email a {
+ letter-spacing: 1px;
+ text-decoration: none;
+ color: black;
+}
+.address, .phone, .email {
+  margin: 7px 0px;
+  background-color: #BD45BF;
+  border-radius: 24px;
+  padding: 3px;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+}
+.pulse_contacts {
+ animation-name: pulse_contacts;
+ animation-duration: 4s;
+ animation-iteration-count: infinite;
+ }
+@keyframes pulse_contacts {
+	0%, 100% {font-size: 26px;}
+	50% {font-size: 40px;}
+}
+
+
+
+
+                      /*Misc*/
+
+#container {
+ display: grid;
+ grid-template-rows: auto 1fr auto auto auto;
+ grid-template-areas:
+	"header"
+	"about"
+	"featured"
+	"beerMonth"
+	"contacts";
+ background-color: #442273;
+}
+
+p {
+ font-family: open sans;
+ font-size: 28px;
+}
+h2 {
+ font-family: londrina solid;
+ font-size: 42px;
+}
+h3 {
+ font-family: alegreya sans sc;
+ font-size: 56px;
+}
+body::-webkit-scrollbar {
+	display: none;
+}
+
+
+
+              /*----------SCREEN MIN 575----------*/
+@media screen and (min-width: 575px){
+ #container {
+  grid-template-rows: auto auto auto auto auto;
+ }
+body::-webkit-scrollbar {
+	width: 1.5rem;
+  display: grid;
+}
+body::-webkit-scrollbar-track {
+	background: #a62957;
+}
+body::-webkit-scrollbar-thumb {
+	background: #442273;
+	border-radius: 10px;
+}
+
+                    /*min575 HEADER SECTION*/
+ header {
+  background-image: url(../images/desktop/main1480.jpg);
+  background-position: center 0px;
+  background-size: cover;
+  background-attachment: scroll;
+  padding-top: 30px;
+ }
+ header h1 {
+  padding-top: 150px;
+  font-size: 42px;
+ }
+ header h2 {
+  font-size: 34px;
+  margin-bottom: 50px;
+  margin-top: 10px;
+ }
+ .link {
+  margin-bottom: 50px;
+  margin-top: 15px;
+ }
+ header a  {
+  font-size: 18px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1.5px;
+  padding: 7px;
+ }
+ #nav1:hover, #nav2:hover {
+   transform: scale(1.5) rotate(-25deg);
+   transition-duration: .75s;
+ }
+ #nav3:hover {
+   transform: scale(1.5);
+   transition-duration: .75s;
+ }
+ #nav4:hover, #nav5:hover {
+   transform: scale(1.5) rotate(25deg);
+   transition-duration: .75s;
+ }
+ .link:hover {
+   transform: scale(2) rotate(180deg);
+   transition-duration: .75s;
+ }
+
+                  /*min575 ABOUT SECTION*/
+ #about {
+  padding-bottom: 40px;
+ }
+ #about .left {
+  background-image: url(../images/desktop/who_we_are.jpg);
+ }
+ #about .right {
+  background-image: url(../images/desktop/family.jpg);
+ }
+ #about .left, #about .right {
+  border-width: 10px;
+  max-width: 700px;
+  min-height: 280px;
+  box-shadow: 20px 20px black;
+ }
+#about p {
+ font-size: 18px;
+ padding: 20px;
+}
+#about h3 {
+ padding-top: 20px;
+ font-size: 28px;
+}
+
+                  /*min575 FEATURED SECTION*/
+#featured {
+  grid-template-rows: 200px 300px 300px;
+ }
+#featured p {
+  margin-top: 200px;
+  font-size: 28px
+ }
+ #featured h2 {
+  font-size: 70px;
+  padding: 10px;
+ }
+ .image1, .image2, .image3, .image4, .image5, .image6 {
+  border-radius: 40px;
+  border-width: 7px;
+  width: 60%;
+ }
+ .image1{
+  background-image: url(../images/desktop/good_intentions.jpg);
+ }
+ .image2{
+  background-image: url(../images/desktop/oat_n_about.jpg);
+ }
+ .image3{
+  background-image: url(../images/desktop/wieze_ass.jpg);
+ }
+ .image4{
+  background-image: url(../images/desktop/darkosaurus.jpg);
+ }
+ .image5{
+  background-image: url(../images/desktop/livin_easy.jpg);
+ }
+ .image6{
+  background-image: url(../images/desktop/patio_pounder.jpg);
+ }
+.logo {
+  background-image: url(../images/desktop/logo.png);
+  background-size: 15%;
+  margin-top: 18px;
+}
+
+                /*min575 BEER OF THE MONTH SECTION*/
+ #beerMonth {
+  background-image: url(../images/desktop/monthly_beer.jpg);
+  margin: 100px 40px 40px 40px;
+  max-width: 1200px;
+  border-image: url("../images/desktop/main.jpg");
+  border-image-slice: 30;
+  border-image-width: auto;
+  width: 90%;
+ }
+ #beerMonth h2 {
+  margin: 3.5em 10px 0px 10px;
+ }
+ #beerMonth h3 {
+  font-size: 40px;
+  padding-bottom: 30px;
+ }
+ #beerMonth p {
+  font-size: 28px;
+  margin: 100px 30px 30px 1em;
+ }
+ #beerMonth ul {
+  margin: 0px 20px 60px 20px;
+  font-size: 28px;
+ }
+  h2 {
+   font-size: 76px;
+ }
+
+                        /*min575 CONTACTS SECTION*/
+ #contacts {
+  background-image: url(../images/desktop/keg.jpg);
+  max-width: 1100px;
+  border-radius: 90px;
+  width: 90%;
+  max-width: 1200px;
+ }
+ #contacts ul, #contacts ol {
+  font-size: 28px;
+  margin-bottom: 50px;
+ }
+ #contacts h2 {
+  font-size: 48px;
+  margin: 45px 5px 0px 5px;
+ }
+ .address {
+  margin: 0px 20px;
+  }
+ .phone, .email {
+  border: none;
+  border-color: none;
+  background-color: transparent;
+  margin: 25px 5px;
+ }
+ .phone a, .email a {
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 30px;
+  background-color: #BD45BF;
+  padding: 10px 5px;
+ }
+ @keyframes pulse_contacts {
+	0%, 100% {font-size: 48px;}
+	50% {font-size: 70px;}
+ }
+ .address:hover, .phone:hover, .email:hover {
+  transform: scale(1.2);
+  transition-duration: 1s;
+ }
+}
+
+ @media screen and (min-width: 745px){
+  .address {
+   border: none;
+   border-color: none;
+   background-color: transparent;
+  }
+  .address a {
+   border-style: solid;
+   border-color: black;
+   border-width: 2px;
+   border-radius: 30px;
+   background-color: #BD45BF;
+   padding: 10px;	 
+  }
+  .address:hover, .phone:hover, .email:hover {
+   transform: scale(1.4);
+  }
+}
+
+              /*-------------SCREEN MIN 1375----------------*/
+@media screen and (min-width: 1375px){
+ #container {
+  grid-template-rows: auto auto auto 1200px auto;
+ }
+                  /*1375 HEADER SECTION*/
+ header {
+  background-image: url(../images/desktop/main.jpg);
+  grid-template-rows: 75px 1fr 175px;
+  padding: 55px 60px 0px 60px;
+ }
+
+ header h1 {
+  font-size: 88px;
+  align-self: left;
+  justify-self: center;
+  margin: 0px;
+  padding-top: 250px;
+ }
+ header h2 {
+  font-size: 56px;
+  padding-top: 10px;
+ }
+ header a {
+  padding: 13px;
+  font-size: 26px;
+  margin: 0px;
+  align-self: center;
+  border-width: 3px;
+ }
+ .logo {
+  margin: 15px 0px 0px 50px;
+ }
+                  /*1375 ABOUT SECTION*/
+ #about {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "left right";
+  padding: 40px 20px 40px 20px;
+ }
+ #about .left {
+  grid-area: left;
+ }
+ #about .right {
+  grid-area: right;
+ }
+ #about p {
+  font-size: 24px;
+  margin: 0px 20px 10px 20px;
+  padding: 15px;
+ }
+ #about h3 {
+  padding-top: 45px;
+  font-size: 50px;
+ }
+ #about .left, #about .right{
+  box-shadow: 25px 25px black;	
+  min-height: 450px;
+ }
+
+              /*1375 FEATURED SECTION*/
+ #featured {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px 450px 450px;
+  grid-template-areas: "h2        h2      h2"
+		               "image1  image2  image3"
+		               "image4  image5  image6";
+  margin-top: 15px;
+  align-self: center;
+ }
+ #featured p {
+  margin-top: 350px;
+ }
+ .image1, .image2, .image3, .image4, .image5, .image6 {
+  border-radius: 60px;
+  margin: 20px;
+  min-width: 400px;
+  box-shadow: 20px 20px black;
+ }
+	
+				/*1375 BEER OF THE MONTH*/
+ #beerMonth {
+  grid-template-rows: 375px 200px auto;
+  grid-template-columns: 1fr .5fr 1fr;
+  grid-template-areas: "h2         h2       h2"
+                      "h3   	   h3	    h3"
+                      "textleft  ....   textright";
+  border-image-slice: 35;
+  
+  }
+ #beerMonth p {
+  grid-area: textleft;
+  margin: 0px 0px 40px 1.5em;
+ }
+ #beerMonth ul {
+  grid-area: textright;
+  margin: 1em 2.5em 40px 0px;
+ }
+ #beerMonth p {
+  margin: 1em 0px 40px 2.5em;
+ }
+ #beerMonth h2 {
+  margin: 0px;
+  display: grid;
+  align-items: flex-end;
+  font-size: 80px;
+ }
+ #beerMonth h3 {
+  display: grid;
+  align-self: flex-start;
+ }
+}
+
